@@ -4,6 +4,6 @@
  *
  * @link https://core.trac.wordpress.org/ticket/54272
  *
- * @package travelaero
+ * @package casaluna
  * @since 1.0.0
  */

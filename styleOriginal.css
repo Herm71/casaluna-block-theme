@@ -213,7 +213,7 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 		margin: 0 -10px;
 	}
 
-	.travelaero-contact-page.has-global-padding {
+	.casaluna-contact-page.has-global-padding {
 		padding: 21px !important;
 	}
 	header .alignwide{
@@ -325,7 +325,7 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 /* blog post */
 @media only screen and (max-width: 1026px){
 
-	.travelaero-front-blog ul{
+	.casaluna-front-blog ul{
 	    display: grid;
      grid-template-columns: repeat(auto-fill, minmax(295px, 1fr)) !important;
        gap: 2em;
@@ -412,7 +412,7 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 	color:  var(--wp--preset--color--primary) !important;
 }
 
-.travelaero .wptravel-block-trips-list .wp-travel-add-to-wishlists{
+.casaluna .wptravel-block-trips-list .wp-travel-add-to-wishlists{
 	 display: flex;
     width: 40px;
     height: 40px;
@@ -663,14 +663,14 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 
 
 
-.travelaero-contact-page{
+.casaluna-contact-page{
 	background: #476075ad;
 	    background: #476075ad;
     border-radius: 10px;
     padding: 30px 30px;
 }
 
-.travelaero-contact-page input[type="submit"]  {
+.casaluna-contact-page input[type="submit"]  {
 	    background: var(--wp--preset--color--primary);
        padding: 20px;
     margin-top: 20px;
@@ -683,7 +683,7 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
     letter-spacing: 0.9px;
 	cursor:pointer;
 }
-.travelaero-contact-page input[type="submit"]:hover{
+.casaluna-contact-page input[type="submit"]:hover{
 	background:var(--wp--preset--color--secondary);
 }
 
@@ -698,9 +698,9 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 	color:var(--wp--preset--color--secondary) !important;
 }
 
-  .travelaero-contact-page input[type="text"],
-  .travelaero-contact-page input[type="email"],
-  .travelaero-contact-page textarea {
+  .casaluna-contact-page input[type="text"],
+  .casaluna-contact-page input[type="email"],
+  .casaluna-contact-page textarea {
     display: block;
     width: 100%;
     padding: 20px;

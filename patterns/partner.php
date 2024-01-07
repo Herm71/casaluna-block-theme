@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Partner
- * Slug: travelaero/partner
- * Categories: travelaero
+ * Slug: casaluna/partner
+ * Categories: casaluna
  *
- * @package travelaero
+ * @package casaluna
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@
 <div class="wp-block-group alignwide travelero-align"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"100%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:100%"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"}},"textColor":"bright","fontSize":"x-large","fontFamily":"Oswald"} -->
-<h2 class="wp-block-heading has-text-align-center has-bright-color has-text-color has-oswald-font-family has-x-large-font-size" style="font-style:normal;font-weight:600;text-transform:uppercase"><?php echo esc_html__( 'Happy Partners and Sponsors', 'travelaero' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-bright-color has-text-color has-oswald-font-family has-x-large-font-size" style="font-style:normal;font-weight:600;text-transform:uppercase"><?php echo esc_html__( 'Happy Partners and Sponsors', 'casaluna' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

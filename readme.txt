@@ -1,4 +1,4 @@
-=== Travelaero ===
+=== casaluna ===
 Contributors: WP Travel
 Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, block-patterns, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, full-site-editing,  threaded-comments, block-styles, wide-blocks, translation-ready
 Stable tag: 1.0.2
@@ -10,12 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Travel Aero is a Modern, Interactive, and Ultimate SEO Friendly Theme designed in WordPress by WP Travel( Best Travel and Tour Operator Plugin for WordPress) to elevate your travel website to a new acme. Whether you are a Tour and travel operator, a travel agency owner, or an enthusiastic passionate traveler looking to share your adventures, look no further than Travel Aero (The perfect solution to showcase your travel experience). Travel Aero is built with essential features like Searching trips by filter, exploring trip types, showcasing featured trips, displaying ratings and reviews, and presenting blogs and articles, with special social media channels integration for your brand. Travel Aero has enhanced the On-Page Booking Feature which is unique helping every user to book in the same one-page session directly without getting redirected to additional multiple pages. The theme is completely responsive, ensuring that your website content looks stunning and elegant on any device like a desktop, tablet or smartphone, etc. So if you are thinking of starting a travel and tour booking website without any hassle of coding and growing your business sales and leads, then Choosing Travel Aero is like Cherry on Top which is seamlessly compatible with the Best Travel and Tour Operator Plugin ( WP Travel ) helping you to create your travel site instantly within minutes. Full Demo here: https://wpdemo.wensolutions.com/travelaero/. Our Official Support Forum : https://wensolutions.com/contact/ and the complete documentation here: https://wensolutions.com/docs-category/travelaero/.
+Travel Aero is a Modern, Interactive, and Ultimate SEO Friendly Theme designed in WordPress by WP Travel( Best Travel and Tour Operator Plugin for WordPress) to elevate your travel website to a new acme. Whether you are a Tour and travel operator, a travel agency owner, or an enthusiastic passionate traveler looking to share your adventures, look no further than Travel Aero (The perfect solution to showcase your travel experience). Travel Aero is built with essential features like Searching trips by filter, exploring trip types, showcasing featured trips, displaying ratings and reviews, and presenting blogs and articles, with special social media channels integration for your brand. Travel Aero has enhanced the On-Page Booking Feature which is unique helping every user to book in the same one-page session directly without getting redirected to additional multiple pages. The theme is completely responsive, ensuring that your website content looks stunning and elegant on any device like a desktop, tablet or smartphone, etc. So if you are thinking of starting a travel and tour booking website without any hassle of coding and growing your business sales and leads, then Choosing Travel Aero is like Cherry on Top which is seamlessly compatible with the Best Travel and Tour Operator Plugin ( WP Travel ) helping you to create your travel site instantly within minutes. Full Demo here: https://wpdemo.wensolutions.com/casaluna/. Our Official Support Forum : https://wensolutions.com/contact/ and the complete documentation here: https://wensolutions.com/docs-category/casaluna/.
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Travelaero in the search form and press the 'Enter' key on your keyboard.
+2. Type in casaluna in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 4. Navigate to Appearance -> Editor in your admin panel and customize to taste.
 
@@ -49,7 +49,7 @@ screenshot.png
 * Initial release.
 
 == Licence ==
-Travelaero is distributed under the terms of the GNU GPL.
+casaluna is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

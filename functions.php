@@ -4,22 +4,22 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package travelaero
+ * @package casaluna
  * @since 1.0.0
  */
 
 
-function travelaero_styles() {
+function casaluna_styles() {
 
 	wp_enqueue_style(
-		'travelaero-style',
+		'casaluna-style',
 		get_stylesheet_uri(),
 		[],
 		wp_get_theme()->get( 'Version' )
 	);
 
 	wp_enqueue_script( 
-		'travelaero-custom-js', 
+		'casaluna-custom-js', 
 		get_template_directory_uri() . '/assets/js/custom.js', 
 		array( 'jquery' ), 
 		'20160412', 
@@ -27,16 +27,15 @@ function travelaero_styles() {
 	);
 
 }
-add_action( 'wp_enqueue_scripts', 'travelaero_styles' );
+add_action( 'wp_enqueue_scripts', 'casaluna_styles' );
 
 
-function travelaero_register_block_pattern_categories(){
+function casaluna_register_block_pattern_categories(){
     register_block_pattern_category(
-        'travelaero',
-        array( 'label' => __( 'Travel Aero', 'travelaero' ) )
+        'casaluna',
+        array( 'label' => __( 'Casa Luna', 'casaluna' ) )
     );
 
 }
-add_action('init', 'travelaero_register_block_pattern_categories');
+add_action('init', 'casaluna_register_block_pattern_categories');
 
-require get_template_directory() . '/tgm-plugin/tgm-hook.php';
