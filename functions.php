@@ -41,6 +41,7 @@ add_action( 'after_setup_theme', 'casaluna_setup' );
 
 /**
  * Enqueue theme scripts and styles.
+ * <link rel='stylesheet' id='font-awesome-css' href='https://use.fontawesome.com/releases/v5.8.0/css/all.css' type='text/css' media='all' />
  */
 function casaluna_styles() {
 
@@ -51,21 +52,35 @@ function casaluna_styles() {
 		wp_get_theme()->get( 'Version' )
 	);
 	wp_enqueue_style( 'casaluna-styles-scss', get_template_directory_uri() . '/build/style-index.css', array(), wp_get_theme()->get( 'Version' ) );
-	wp_enqueue_style( 'casaluna-google-fonts', 'hhttps://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap', false );
+	wp_enqueue_style( 'casaluna-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap', false );
 	wp_register_script( 'casaluna-front', get_template_directory_uri() . '/build/theme.js', array(), wp_get_theme()->get( 'Version' ), true );
 	wp_enqueue_script( 'casaluna-front' );
+	wp_register_script( 'casaluna-fontawesome', 'https://kit.fontawesome.com/5e58289d76.js', '', '', null );
+	wp_enqueue_script( 'casaluna-fontawesome' );
 	wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'casaluna_styles' );
 
 /**
+ * Add additional script tags.
+ */
+function casaluna_add_font_awesome_attributes( $tag, $handle, $src ) {
+	if ( 'casaluna-fontawesome' === $handle ) {
+		$tag = '<script src="' . esc_url( $src ) . '" id="casaluna-fontawesome-js" crossorigin="anonymous"></script>';
+	}
+
+	return $tag;
+}
+add_filter( 'script_loader_tag', 'casaluna_add_font_awesome_attributes', 10, 3 );
+
+/**
  * Enqueue additional Google Font Scripts
  */
-function casaluna_googleapi_scripts() {
+function casaluna_api_scripts() {
 	echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
 	echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
 }
-add_action( 'wp_head', 'casaluna_googleapi_scripts' );
+add_action( 'wp_head', 'casaluna_api_scripts' );
 
 /**
  * Register theme block pattern categories.
@@ -77,3 +92,30 @@ function casaluna_register_block_pattern_categories() {
 	);
 }
 add_action( 'init', 'casaluna_register_block_pattern_categories' );
+
+// Wp v4.7.1 and higher
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+  $filetype = wp_check_filetype( $filename, $mimes );
+  return [
+      'ext'             => $filetype['ext'],
+      'type'            => $filetype['type'],
+      'proper_filename' => $data['proper_filename']
+  ];
+
+}, 10, 4 );
+
+function cc_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+function fix_svg() {
+  echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+        </style>';
+}
+add_action( 'admin_head', 'fix_svg' );
