@@ -3,26 +3,17 @@
 	"customTemplates": [
 		{
 			"name": "page-with-full-width",
-			"postTypes": [
-				"post",
-				"page"
-			],
+			"postTypes": [ "post", "page" ],
 			"title": "Page With Full Width"
 		},
 		{
 			"name": "page-with-left-sidebar",
-			"postTypes": [
-				"post",
-				"page"
-			],
+			"postTypes": [ "post", "page" ],
 			"title": "Page With Left Sidebar"
 		},
 		{
 			"name": "page-with-right-sidebar",
-			"postTypes": [
-				"post",
-				"page"
-			],
+			"postTypes": [ "post", "page" ],
 			"title": "Page With Right Sidebar"
 		}
 	],
@@ -31,18 +22,12 @@
 		"color": {
 			"duotone": [
 				{
-					"colors": [
-						"#00a0d2",
-						"#0073aa"
-					],
+					"colors": [ "#00a0d2", "#0073aa" ],
 					"name": "Secondary and primary",
 					"slug": "secondary-primary"
 				},
 				{
-					"colors": [
-						"#0073aa",
-						"#000000"
-					],
+					"colors": [ "#0073aa", "#000000" ],
 					"name": "Primary and Contrast",
 					"slug": "primary-contrast"
 				}
@@ -107,14 +92,7 @@
 			"wideSize": "1280px"
 		},
 		"spacing": {
-			"units": [
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw",
-				"%"
-			]
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
 		},
 		"typography": {
 			"dropCap": true,

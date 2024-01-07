@@ -1,4 +1,4 @@
 module.exports = {
-	"*.{css,scss}": "npm run lint:style",
-	"*.js": "npm run format",
+	'*.{css,scss}': 'npm run lint:style',
+	'*.js': 'npm run format',
 };
