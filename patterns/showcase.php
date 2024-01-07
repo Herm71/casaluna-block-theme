@@ -15,14 +15,14 @@
 <div class="wp-block-group alignfull travelero-align" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"bright","fontSize":"x-large","fontFamily":"Oswald"} -->
-<h2 class="wp-block-heading has-bright-color has-text-color has-oswald-font-family has-x-large-font-size" style="font-style:normal;font-weight:600"><?php echo esc_html__("We kick off your travel adventures by beginning the journey with us.", "casaluna") ?></h2>
+<h2 class="wp-block-heading has-bright-color has-text-color has-oswald-font-family has-x-large-font-size" style="font-style:normal;font-weight:600"><?php echo esc_html__( 'We kick off your travel adventures by beginning the journey with us.', 'casaluna' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"33.33%","className":"get-started-align"} -->
 <div class="wp-block-column is-vertically-aligned-center get-started-align" style="flex-basis:33.33%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"10px"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#" style="border-radius:10px"><?php echo esc_html__( "Get Started", "casaluna" ) ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#" style="border-radius:10px"><?php echo esc_html__( 'Get Started', 'casaluna' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -1,6 +1,6 @@
-<?php 
+<?php
 /**
-* Title: Top Reviews
+ * Title: Top Reviews
  * Slug: casaluna/top-reviews
  * Categories: casaluna
  *
@@ -33,7 +33,7 @@
 <div class="wp-block-group"><!-- wp:group {"style":{"dimensions":{"minHeight":"10px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|20","right":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"0"},"border":{"radius":"0px","width":"0px","style":"none"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;min-height:10px;margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"border":{"radius":"0px","width":"0px","style":"none"},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:image {"id":208,"width":70,"height":70,"scale":"cover","style":{"border":{"radius":"100px","width":"5px"}},"borderColor":"secondary","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url(get_template_directory_uri(  ));?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
+<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -63,7 +63,7 @@
 <div class="wp-block-group"><!-- wp:group {"style":{"dimensions":{"minHeight":"10px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|20","right":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"0"},"border":{"radius":"0px","width":"0px","style":"none"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;min-height:10px;margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"border":{"radius":"0px","width":"0px","style":"none"},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:image {"id":208,"width":70,"height":70,"scale":"cover","style":{"border":{"radius":"100px","width":"5px"}},"borderColor":"secondary","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url(get_template_directory_uri(  ));?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
+<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -93,7 +93,7 @@
 <div class="wp-block-group"><!-- wp:group {"style":{"dimensions":{"minHeight":"10px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|20","right":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"0"},"border":{"radius":"0px","width":"0px","style":"none"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;min-height:10px;margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"border":{"radius":"0px","width":"0px","style":"none"},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-style:none;border-width:0px;border-radius:0px;padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:image {"id":208,"width":70,"height":70,"scale":"cover","style":{"border":{"radius":"100px","width":"5px"}},"borderColor":"secondary","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url(get_template_directory_uri(  ));?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
+<figure class="wp-block-image is-resized has-custom-border is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/one.jpg" alt="one-bg" class="has-border-color has-secondary-border-color wp-image-208" style="border-width:5px;border-radius:100px;object-fit:cover;width:70px;height:70px" width="70" height="70"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 

@@ -21,19 +21,19 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 		add_editor_style( 'build/style-index.css' );
 
-/*
+		/*
 		* Load additional Core block styles.
 		*/
 		// $styled_blocks = array( '' );
 		// foreach ( $styled_blocks as $block ) {
 
-		// 	$name = explode('/', $block);
-		// 	$args = array(
-		// 		'handle' => "casaluna-$name[1]",
-		// 		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
-		// 		$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
-		// 	);
-		// 	wp_enqueue_block_style( $block, $args );
+		// $name = explode('/', $block);
+		// $args = array(
+		// 'handle' => "casaluna-$name[1]",
+		// 'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
+		// $args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
+		// );
+		// wp_enqueue_block_style( $block, $args );
 		// }
 	}
 endif;
@@ -47,7 +47,7 @@ function casaluna_styles() {
 	wp_enqueue_style(
 		'casaluna-style',
 		get_stylesheet_uri(),
-		[],
+		array(),
 		wp_get_theme()->get( 'Version' )
 	);
 	wp_enqueue_style( 'casaluna-styles-scss', get_template_directory_uri() . '/build/style-index.css', array(), wp_get_theme()->get( 'Version' ) );
@@ -70,12 +70,10 @@ add_action( 'wp_head', 'casaluna_googleapi_scripts' );
 /**
  * Register theme block pattern categories.
  */
-function casaluna_register_block_pattern_categories(){
-    register_block_pattern_category(
-        'casaluna',
-        array( 'label' => __( 'Casa Luna', 'casaluna' ) )
-    );
-
+function casaluna_register_block_pattern_categories() {
+	register_block_pattern_category(
+		'casaluna',
+		array( 'label' => __( 'Casa Luna', 'casaluna' ) )
+	);
 }
-add_action('init', 'casaluna_register_block_pattern_categories');
-
+add_action( 'init', 'casaluna_register_block_pattern_categories' );
