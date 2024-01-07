@@ -62,7 +62,7 @@ function casaluna_styles() {
 add_action( 'wp_enqueue_scripts', 'casaluna_styles' );
 
 /**
- * Add additional script tags.
+ * Add additional font awesome script tags.
  */
 function casaluna_add_font_awesome_attributes( $tag, $handle, $src ) {
 	if ( 'casaluna-fontawesome' === $handle ) {
@@ -123,3 +123,42 @@ function fix_svg() {
         </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+/**
+ * Change Blog page title
+ * instead of title of first blog post
+ *
+ * @param  string $block_content Block content to be rendered.
+ * @param  array  $block         Block attributes.
+ * @return string
+ */
+function casaluna_block_filter( $block_content = '', $block = array() ) {
+	if ( is_home() ) {
+		if ( isset( $block['blockName'] ) && 'core/post-title' === $block['blockName'] ) {
+			if ( isset( $block['attrs']['className'] ) && $block['attrs']['className'] === 'blog-page-title' ) {
+				$new_title = get_the_title( get_option( 'page_for_posts' ) );
+				$new_content = '<h2 style="font-style:normal;font-weight:600;text-transform:uppercase;" class="has-text-align-center blog-page-title wp-block-post-title has-x-large-font-size has-oswald-font-family">' . $new_title . '</h2>';
+				$html      = str_replace(
+					$block_content,
+					$new_content,
+					$block_content
+				);
+				return $html;
+
+			}
+		}
+	}
+	return $block_content;
+}
+
+add_filter( 'render_block', 'casaluna_block_filter', 10, 2 );
+
+function casaluna_test() {
+	if ( is_home() ) {
+		$newTitle = get_the_title( get_option( 'page_for_posts' ) );
+		$title    = $newTitle;
+		echo $title;
+	}
+}
+
+add_action( 'wp_head', 'casaluna_test' );
