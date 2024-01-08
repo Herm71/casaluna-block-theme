@@ -37,7 +37,8 @@
 	"devDependencies": {
 		"@wordpress/prettier-config": "^3.5.0",
 		"@wordpress/scripts": "^26.19.0",
-		"lint-staged": "^15.2.0"
+		"lint-staged": "^15.2.0",
+		"standard-version": "^9.5.0"
 	},
 	"files": [
 		"build",
