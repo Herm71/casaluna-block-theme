@@ -99,7 +99,7 @@ add_action( 'init', 'casaluna_register_block_pattern_categories' );
 $styled_blocks = array( 'core/navigation' );
 foreach ( $styled_blocks as $block ) {
 
-	$name = explode('/', $block);
+	$name = explode( '/', $block );
 	$args = array(
 		'handle' => "ucsc-$name[1]",
 		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
@@ -154,9 +154,9 @@ function casaluna_block_filter( $block_content = '', $block = array() ) {
 	if ( is_home() ) {
 		if ( isset( $block['blockName'] ) && 'core/post-title' === $block['blockName'] ) {
 			if ( isset( $block['attrs']['className'] ) && $block['attrs']['className'] === 'blog-page-title' ) {
-				$new_title = get_the_title( get_option( 'page_for_posts' ) );
+				$new_title   = get_the_title( get_option( 'page_for_posts' ) );
 				$new_content = '<h2 style="font-style:normal;font-weight:600;text-transform:uppercase;" class="has-text-align-center blog-page-title wp-block-post-title has-x-large-font-size has-oswald-font-family">' . $new_title . '</h2>';
-				$html      = str_replace(
+				$html        = str_replace(
 					$block_content,
 					$new_content,
 					$block_content
