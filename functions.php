@@ -161,4 +161,4 @@ function casaluna_test() {
 	}
 }
 
-add_action( 'wp_head', 'casaluna_test' );
+// add_action( 'wp_head', 'casaluna_test' );
