@@ -93,7 +93,25 @@ function casaluna_register_block_pattern_categories() {
 }
 add_action( 'init', 'casaluna_register_block_pattern_categories' );
 
-// Wp v4.7.1 and higher
+/*
+ * Load additional Core block styles.
+ */
+$styled_blocks = array( 'core/navigation' );
+foreach ( $styled_blocks as $block ) {
+
+	$name = explode('/', $block);
+	$args = array(
+		'handle' => "ucsc-$name[1]",
+		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
+		$args['path'] = get_theme_file_path( "block-styles/$name[1].css" ),
+	);
+	wp_enqueue_block_style( $block, $args );
+}
+
+
+/**
+ * Enable SVG in Media Library.
+ */
 add_filter(
 	'wp_check_filetype_and_ext',
 	function ( $data, $file, $filename, $mimes ) {

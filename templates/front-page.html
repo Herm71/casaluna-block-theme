@@ -231,13 +231,14 @@
 			<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"0"},"padding":{"top":"var:preset|spacing|30","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignfull"
 				style="margin-top:var(--wp--preset--spacing--70);margin-bottom:0;padding-top:var(--wp--preset--spacing--30);padding-bottom:0">
-				<!-- wp:cover {"url":"http://localhost:8888/wp-content/uploads/2024/01/casa-luna.jpg","id":1838,"dimRatio":40,"overlayColor":"black","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
-				<div class="wp-block-cover alignfull"
+				<!-- wp:cover {"url":"http://localhost:8888/wp-content/uploads/2024/01/casa-luna.jpg","id":1838,"hasParallax":true,"dimRatio":40,"overlayColor":"black","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+				<div class="wp-block-cover alignfull has-parallax"
 					style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)">
 					<span aria-hidden="true"
-						class="wp-block-cover__background has-black-background-color has-background-dim-40 has-background-dim"></span><img
-						class="wp-block-cover__image-background wp-image-1838" alt="Casa Luna entrance"
-						src="http://localhost:8888/wp-content/uploads/2024/01/casa-luna.jpg" data-object-fit="cover" />
+						class="wp-block-cover__background has-black-background-color has-background-dim-40 has-background-dim"></span>
+					<div role="img" class="wp-block-cover__image-background wp-image-1838 has-parallax"
+						style="background-position:50% 50%;background-image:url(http://localhost:8888/wp-content/uploads/2024/01/casa-luna.jpg)">
+					</div>
 					<div class="wp-block-cover__inner-container">
 						<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"travelero-align","layout":{"type":"constrained"}} -->
 						<div class="wp-block-group alignfull travelero-align"
@@ -297,7 +298,7 @@
 					style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)">Take a video
 					tour of Casa Luna</h2>
 				<!-- /wp:heading -->
-			
+
 				<!-- wp:embed {"url":"https://youtu.be/TQLwUEtAw6Q?si=CxEYitpfy0dExTe-","type":"video","providerNameSlug":"youtube","responsive":true,"align":"wide","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 				<figure
 					class="wp-block-embed alignwide is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">

@@ -1,0 +1,8 @@
+header .wp-block-navigation a:hover {
+	color: var(--wp--preset--color--tertiary)!important;
+	text-decoration: underline;
+}
+
+footer .wp-block-navigation a:hover {
+	text-decoration: underline;
+}
