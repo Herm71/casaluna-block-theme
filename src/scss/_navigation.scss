@@ -1,7 +1,7 @@
 /*
  * Navigation
  */
-
+header {
 .current-menu-item a.wp-block-navigation-item__content, .current-menu-ancestor, .current-menu-ancestor .wp-block-navigation__submenu-icon{
 	color: var(--wp--preset--color--primary) !important;
 }
@@ -64,4 +64,5 @@
 
 .wp-block-navigation-submenu .wp-block-navigation-item:not(last-child) {
     border-bottom: 1px solid #6b686857;
+}
 }
