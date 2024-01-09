@@ -24,17 +24,17 @@ if ( ! function_exists( 'casaluna_setup' ) ) :
 		/*
 		* Load additional Core block styles.
 		*/
-		// $styled_blocks = array( '' );
-		// foreach ( $styled_blocks as $block ) {
+		$styled_blocks = array( 'core/details' );
+		foreach ( $styled_blocks as $block ) {
 
-		// $name = explode('/', $block);
-		// $args = array(
-		// 'handle' => "casaluna-$name[1]",
-		// 'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
-		// $args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
-		// );
-		// wp_enqueue_block_style( $block, $args );
-		// }
+		$name = explode('/', $block);
+		$args = array(
+		'handle' => "casaluna-$name[1]",
+		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
+		$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
+		);
+		wp_enqueue_block_style( $block, $args );
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'casaluna_setup' );
@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'casaluna_setup' );
  * Enqueue theme block editor style script to modify the "styles" available for blocks in the editor.
  */
 function casaluna_block_editor_scripts() {
-	wp_enqueue_script( 'casaluna-editor', get_theme_file_uri( '/wp-blocks/styles.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'casaluna-editor', get_theme_file_uri( '/block-styles/styles.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'enqueue_block_editor_assets', 'casaluna_block_editor_scripts' );
 
