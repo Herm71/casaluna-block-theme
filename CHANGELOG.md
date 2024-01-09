@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.1...v1.1.2) (2024-01-09)
+
+
+### Bug Fixes
+
+* :bug: Remove Husky Install script from `package.json` ([cdadabf](https://github.com/Herm71/casaluna-block-theme/commit/cdadabfaf68a62b1bec165e7a07c843d4b445496))
+
 ### [1.1.1](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.0...v1.1.1) (2024-01-09)
 
 
