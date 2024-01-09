@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.3...v1.1.4) (2024-01-09)
+
+
+### Bug Fixes
+
+* :bug: Another edit to `release.yml` ([3619cee](https://github.com/Herm71/casaluna-block-theme/commit/3619ceeda09accaa51db95bb6f4082b81948a4a7))
+
 ### [1.1.3](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.2...v1.1.3) (2024-01-09)
 
 ### [1.1.2](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.1...v1.1.2) (2024-01-09)
