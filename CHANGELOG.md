@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.4...v1.2.0) (2024-01-09)
+
+
+### Features
+
+* :sparkles: New Features! ([b2fb75a](https://github.com/Herm71/casaluna-block-theme/commit/b2fb75a0fe5b230ffca1322ce2e8a70703e2b23a))
+
 ### [1.1.4](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.3...v1.1.4) (2024-01-09)
 
 
