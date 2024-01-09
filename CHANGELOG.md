@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Herm71/casaluna-block-theme/compare/v1.0.0...v1.1.0) (2024-01-09)
+
+
+### Features
+
+* :zap: add GitHub Theme URI to enable connection with git-updater ([f756416](https://github.com/Herm71/casaluna-block-theme/commit/f756416ff4206bd9d6d5b5d4e264354a4ee40531))
+
+
+### Bug Fixes
+
+* :lipstick: Add old styles ([9b74553](https://github.com/Herm71/casaluna-block-theme/commit/9b74553055679bf88d5ce939f6e54fcc11880958))
+
 ## 1.0.0 (2024-01-08)
 
 ## 1.0.0 (2024-01-08)
