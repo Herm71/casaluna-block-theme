@@ -7,12 +7,12 @@
  * @package casaluna
  * @since 1.0.0
  */
-if ( ! function_exists( 'rcid_setup' ) ) :
+if ( ! function_exists( 'casaluna_setup' ) ) :
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since UCSC 1.0.0
+	 * @since casaluna 1.0.0
 	 *
 	 * @return void
 	 */
@@ -38,6 +38,14 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'casaluna_setup' );
+
+/**
+ * Enqueue theme block editor style script to modify the "styles" available for blocks in the editor.
+ */
+function casaluna_block_editor_scripts() {
+	wp_enqueue_script( 'casaluna-editor', get_theme_file_uri( '/wp-blocks/styles.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
+}
+add_action( 'enqueue_block_editor_assets', 'casaluna_block_editor_scripts' );
 
 /**
  * Enqueue theme scripts and styles.
@@ -101,7 +109,7 @@ foreach ( $styled_blocks as $block ) {
 
 	$name = explode( '/', $block );
 	$args = array(
-		'handle' => "ucsc-$name[1]",
+		'handle' => "casaluna-$name[1]",
 		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
 		$args['path'] = get_theme_file_path( "block-styles/$name[1].css" ),
 	);
