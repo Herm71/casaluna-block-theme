@@ -24,7 +24,7 @@ if ( ! function_exists( 'casaluna_setup' ) ) :
 		/*
 		* Load additional Core block styles.
 		*/
-		$styled_blocks = array( 'core/details' );
+		$styled_blocks = array( 'core/details','core/post-excerpt' );
 		foreach ( $styled_blocks as $block ) {
 
 		$name = explode('/', $block);
