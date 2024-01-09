@@ -38,5 +38,5 @@ jobs:
             - name: Release
               uses: softprops/action-gh-release@v1
               with:
-                  files: ucsc-2022.zip
+                  files: casaluna-block-theme.zip
                   generate_release_notes: true
