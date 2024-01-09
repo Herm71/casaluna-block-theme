@@ -1,169 +1,6 @@
 /*
- * Top button styles
- */
-
-.topbutton {
-	&:hover {
-		border-radius:50%;
-	}
-	text-align: center;
-	height: 50px;
-	width: 50px;
-	position: fixed;
-	right: 15px;
-	bottom: 30px;
-	z-index: 99999;
-	background-repeat: no-repeat;
-	display: none;
-	border-bottom: none;
-	text-decoration:none;
-	color: var(--wp--preset--color--white);
-
-	.dashicons-arrow-up-alt2 {
-		background-color: var(--wp--preset--color--tertiary);
-		width: 50px;
-		height: 50px;
-		font-size: 50px;
-		text-decoration: none;
-		border-radius: 50%;
-	};
-	&:hover {
-		.dashicons-arrow-up-alt2 {
-
-			color: var(--wp--preset--color--white);
-			background-color: var(--wp--preset--color--secondary);
-
-		}
-	}
-}
-
-
-/*
  * Travelero styles
  */
-
-
-
-header{
-	position:relative;
-}
-header .has-primary-background-color {
-    padding: 5px 0 20px 0;
-}
-header .casaluna-header {
-    position: absolute;
-    /* bottom: 0; */
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    z-index: 9;
-    transform: translate(-50%, 15%);
-}
-
-
-header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color a:hover{
-	color: #fff !important;
-}
-
-
-.current-menu-item a.wp-block-navigation-item__content, .current-menu-ancestor, .current-menu-ancestor .wp-block-navigation__submenu-icon{
-	color: var(--wp--preset--color--primary) !important;
-}
-.wp-block-navigation-link.current-menu-item a:focus span{
-	color:var(--wp--preset--color--primary) !important;
-}
-.wp-block-navigation-link a:hover{
-	color:var(--wp--preset--color--primary) !important;
-}
-.wp-block-navigation-link.current-menu-item a::after, .wp-block-navigation-link a:hover::after {
-    content: '';
-    position: absolute;
-    background: var(--wp--preset--color--primary);
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-   animation: scale 1s ease-in-out forwards; /* Apply the 'scale' animation with the desired timing function */
-}
-
-@keyframes scale {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%; /* End with 100% width */
-    }
-}
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
-	  backdrop-filter: blur(19px);
-    z-index: 9999;
-    background: linear-gradient(163deg, rgb(7 56 91 / 78%) 0%, rgb(0 0 0 / 60%) 53%, rgb(19 24 26 / 49%) 100%);
-    color: #000;
-    left: 0;
-    max-width: 100%;
-    position: fixed;
-    top: -100px;
-	height:100vh;
-}
-.wp-block-navigation__responsive-container-close {
-	color: #fff;
-	    right: 10px;
-    top: 10px;
-}
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{
-	color: #fff !important;
-}
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container li {
-	padding: 6px;
-}
-.wp-block-navigation .has-child .wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container{
-	min-width: 207px;
-}
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-    border: 1px solid rgba(0,0,0,.15);
-   padding: 10px;
-}
-
-.wp-block-navigation-submenu .wp-block-navigation-item:not(last-child) {
-    border-bottom: 1px solid #6b686857;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1300px){
-	header .travelero-header {
-		width: 97%;
-	}
-}
-
-@media only screen and (max-width: 992px){
-	header .has-primary-background-color {
-    padding: 5px 0 0px 0;
-}
-	header .travelero-header {
-		position:relative;
-	}
-}
-
-.hero-section{
-	position:relative;
-}
-
-.hero-section .wp-block-wp-travel-block-slides .wp-block-cover .wp-block-cover__image-background, .hero-section .wp-block-cover .wp-block-cover__image-background{
-	animation: zoom-in 14s infinite;
-}
-
-@keyframes zoom-in {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 .wp-elements-d1a4ec33e010c922662cfbf49ca16ea5 a{
 	color: var(--wp--preset--color--primary);
@@ -241,13 +78,6 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
    z-index:8;
 }
 
-#wptravel-block-trips-list a:hover, .wp-block-post-title a:hover, header a:hover{
-	color:var(--wp--preset--color--primary) !important;
-}
-#wptravel-block-trips-list .wptravel-blocks-trip-meta a:hover, a:hover{
-	color:#fff !important;
-}
-
 .hero-slider{
 	position: relative;
 }
@@ -258,37 +88,6 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
     width: 100% !important;
     bottom: 0px;
 
-}
-#wptravel-block-trip-search{
-	max-width:none;
-}
-.wptravel-block-trip-search .wp-travel-search form input, .wptravel-block-trip-search .wp-travel-search form select{
-	height: 50px !important;
-    padding: 10px 20px;
-    border-radius: 0px;
-	border:none;
-	width: 97%;
-
-}
-
-
-.wp-travel-search form select{
-	background: #fff;
-	border-right: 15px solid #fff !important;
-}
-
-
-#wptravel-block-trip-search{
-	padding:50px 0;
-}
-#wptravel-block-trip-search label{
-	display:none;
-}
-.wptravel-block-trip-search .wp-travel-search form{
-	    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-}
-.wptravel-block-trip-search .wp-travel-search form {
-	column-gap: 0px !important;
 }
 
 @media only screen and (max-width: 700px){
@@ -340,21 +139,6 @@ header .wp-block-social-links a:hover, .social-links a:hover, .has-bright-color 
 
 }
 
-
-
-/*  trp list */
-#wptravel-block-trips-list.wptravel-block-wrapper.layout-three .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card .wptravel-blocks-trip-card-img-container img {
-	height: 377px;
-}
-#wptravel-block-trips-list.wptravel-block-wrapper.layout-one .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card,#wptravel-block-trips-list.wptravel-block-wrapper.layout-two .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card,#wptravel-block-trips-list.wptravel-block-wrapper.layout-three .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card,#wptravel-block-trips-list.wptravel-block-wrapper.layout-four .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card, .wptravel-layout-v2 .wptravel-archive-wrapper .view-box{
-	background:#476075ad;
-}
-#wptravel-block-trips-list.wptravel-block-wrapper.layout-two .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card .wptravel-blocks-card-body .wptravel-blocks-floating-container{
-	background: #00a0d2;
-}
-#wptravel-block-trips-list.wptravel-block-wrapper.layout-two .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card .wptravel-blocks-card-body .wptravel-blocks-floating-container .wptravel-blocks-trip-meta, #wptravel-block-trips-list.wptravel-block-wrapper.layout-two .wptravel-archive-wrapper.grid-view .wptravel-blocks-trip-card .wptravel-blocks-card-body .wptravel-blocks-floating-container .wptravel-blocks-trip-meta i{
-	color: #fff;
-}
 
 @media only screen and (max-width: 1345px){
 	.travelero-align{
