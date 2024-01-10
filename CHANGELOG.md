@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/Herm71/casaluna-block-theme/compare/v1.2.0...v1.2.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* :bug: fix incorrect code for mime types in css files ([d8a6ba3](https://github.com/Herm71/casaluna-block-theme/commit/d8a6ba316c17131b16a2e61fbcaac6c84eb63163))
+
 ## [1.2.0](https://github.com/Herm71/casaluna-block-theme/compare/v1.1.4...v1.2.0) (2024-01-09)
 
 
