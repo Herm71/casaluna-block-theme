@@ -35,6 +35,9 @@ if ( ! function_exists( 'casaluna_setup' ) ) :
 		);
 		wp_enqueue_block_style( $block, $args );
 		}
+		if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
+			include_once get_parent_theme_file_path( 'vendor/autoload.php' );
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'casaluna_setup' );
