@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/Herm71/casaluna-block-theme/compare/v1.2.1...v1.2.2) (2024-01-11)
+
+
+### Bug Fixes
+
+* :bug: Fixed bug where styles were not enqueueing properly ([b567ac5](https://github.com/Herm71/casaluna-block-theme/commit/b567ac5aa0eaf81baccc1efac95b25d5c98b61ef))
+
 ### [1.2.1](https://github.com/Herm71/casaluna-block-theme/compare/v1.2.0...v1.2.1) (2024-01-10)
 
 
