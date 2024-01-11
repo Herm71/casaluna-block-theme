@@ -21,19 +21,19 @@ if ( ! function_exists( 'casaluna_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 		add_editor_style( 'build/style-index.css' );
 
-		/*
+/*
 		* Load additional Core block styles.
 		*/
-		$styled_blocks = array( 'core/details','core/post-excerpt' );
+		$styled_blocks = array( 'core/details', 'core/post-excerpt' );
 		foreach ( $styled_blocks as $block ) {
 
-		$name = explode('/', $block);
-		$args = array(
-		'handle' => "casaluna-$name[1]",
-		'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
-		$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
-		);
-		wp_enqueue_block_style( $block, $args );
+			$name = explode('/', $block);
+			$args = array(
+				'handle' => "rcid-$name[1]",
+				'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
+				$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
+			);
+			wp_enqueue_block_style( $block, $args );
 		}
 		if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 			include_once get_parent_theme_file_path( 'vendor/autoload.php' );
