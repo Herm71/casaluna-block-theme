@@ -1,6 +1,7 @@
 # Casa Luna WordPress Block Theme
 
-![GitHub Release](https://img.shields.io/github/v/release/Herm71/casaluna-block-theme?logo=github) ![GitHub issues](https://img.shields.io/github/issues-raw/Herm71/casaluna-block-theme) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Herm71/casaluna-block-theme/release.yml)
+![GitHub Release](https://img.shields.io/github/v/release/Herm71/casaluna-block-theme?logo=github) ![GitHub issues](https://img.shields.io/github/issues/Herm71/casaluna-block-theme?logo=github)
+ ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Herm71/casaluna-block-theme/release.yml?logo=github)
 
 This is the WordPress Block Theme for [Casa Luna](https://casalunayelapa.com) in Yelapa, Cabo Corrientes, Jalisco, MX.
 
