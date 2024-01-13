@@ -24,12 +24,12 @@ if ( ! function_exists( 'casaluna_setup' ) ) :
 /*
 		* Load additional Core block styles.
 		*/
-		$styled_blocks = array( 'core/details', 'core/post-excerpt' );
+		$styled_blocks = array( 'core/details', 'core/post-excerpt', 'core/navigation' );
 		foreach ( $styled_blocks as $block ) {
 
 			$name = explode('/', $block);
 			$args = array(
-				'handle' => "rcid-$name[1]",
+				'handle' => "casaluna-$name[1]",
 				'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
 				$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
 			);
