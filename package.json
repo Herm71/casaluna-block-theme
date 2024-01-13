@@ -42,6 +42,7 @@
 	"files": [
 		"build",
 		"assets",
+		"block-styles",
 		"parts",
 		"patterns",
 		"screenshot.png",
