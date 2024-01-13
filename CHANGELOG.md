@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/Herm71/casaluna-block-theme/compare/v1.2.3...v1.2.4) (2024-01-13)
+
+
+### Bug Fixes
+
+* :lipstick: Replace screenshot ([93b658d](https://github.com/Herm71/casaluna-block-theme/commit/93b658ddb6e20f0cd8cc36091e527ae1cdf82899))
+
 ### [1.2.3](https://github.com/Herm71/casaluna-block-theme/compare/v1.2.2...v1.2.3) (2024-01-13)
 
 
